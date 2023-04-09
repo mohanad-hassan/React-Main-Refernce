@@ -1,0 +1,6 @@
+// auto reanme tag , to rename the tag two fields when changing just one  .
+// Highlight Matching Tag .
+// you can set format onsave and format on paste in vs settings to autoformat when pressing ctrl+s .
+//settings.json  in .vscode in root folder , is to set settings for the current workspace in vscode .
+//es7 reactsnippets   (rafc rafce ).
+//
