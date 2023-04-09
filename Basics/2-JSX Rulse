@@ -4,4 +4,5 @@
 //class we use it by className .
 // close every element with / , even if the element dont neded that in normal html like <img> .
 //return in the same line , or return ( )  .
-//
+// there is no differnce bewtween format js and jsx  , it just for you to know that is not a vanilla javascript file .
+
