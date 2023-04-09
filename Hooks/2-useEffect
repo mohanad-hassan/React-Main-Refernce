@@ -1,0 +1,20 @@
+// when you write a function in the compnent and call it it will executed every time you rernder comonent , this is why we need useEffect .
+// useEffect runs the code  when the depencdicies in [] changes , and if you putit empty [] it will run the code just the first time .
+//calling useState in compnent body without useEffect will cause infinity loop .
+//if you remove the [] dependicies array it will trigger with every rerender .
+//useEffect callback function cant be async because async returns  Promise , when useEffect return the cleanup function , so we use async in side the callback 
+of useEffect .
+//you can more than one useEffect , but we dont need that , the only need for that is that set a differnt  dependicies array for every different useEffect.
+//we pass state to the dependicies array  , when the state change , the component rernder and useEffect retrigger .
+// {condition && jsx}  conditional rendernig .
+//hooks statrs with use then Cappital letter .
+// || and && are short circuit .
+//CleanUp function : we said that when we rite [ ]  the useEffect will execute on the initial render  , but when you put a component inside comonent  , and 
+toogle it with a state it will be removed and returnde to the initial tree of the app , wich mean the useEffect in the second compnent will run with rernder 
+with state toggle , so we need Clean up function to remove things like eventlistnerd 
+ {state && secondComponent }.
+ //the secnd component useEffect will rerun with every toggle from the state , we cant do anything for that .
+ //clean up runs after the render of the first component  , and before the useEffect of the second component  .
+ // cleanUp executes when the comonent unMount .
+ //WHERE IM  , reading about useEffect from react website .
+ 
