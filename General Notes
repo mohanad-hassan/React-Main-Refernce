@@ -1,3 +1,9 @@
 //we use e.preventDefault() because the default behavior for form is to collect the data and send them to the url you defined in action .
 //onSubmit fires action when the user clics the button its type is submit .
+//    npm create vite@latest my-react-app -- --template react   is faster than create react-app  for creating , developmening and production .
+//in vite , we have to use jsx for file formats .
+//it creates dist folder when builing , not build .
+//vite is alternative for wepback .
+// or npm init vite .
 //
+
