@@ -1,0 +1,3 @@
+//we use e.preventDefault() because the default behavior for form is to collect the data and send them to the url you defined in action .
+//onSubmit fires action when the user clics the button its type is submit .
+//
