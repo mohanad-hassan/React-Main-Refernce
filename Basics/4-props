@@ -1,0 +1,5 @@
+//what we pass to the copmennt when we calling it .
+// Children Prop ,  is will be set  , when you write something in the comonent tags when you call it .
+//KeyProp , it have to be a number .
+//if you write a word in props  , it will be a boolean  else you have towrite   name = {variableName}  .
+//
