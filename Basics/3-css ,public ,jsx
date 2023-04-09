@@ -1,0 +1,4 @@
+//index.css is the main css folder for the project .
+//because index.html is in public   , ./ points to public folder from any where in your project (in html code ).
+// we set javascript code before return ,  we can use js inside return with { } .
+//
