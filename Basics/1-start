@@ -1,4 +1,8 @@
  // npx create-react-app name    to create a react app .
  //npx create-react-app to create the reacta app in the rootfolder .
  //npx is  a online tool to create react app ,  then npm start .
+ //the whole project lives in one div in inndex.html .
+ //packkagelock.json is about dependicies of depednicies .
+ // comonent must start with a Capiital letter .
+ //compnent can be a function  or arrow function , it must return jsx code .
  //
