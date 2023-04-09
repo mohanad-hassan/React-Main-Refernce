@@ -1,0 +1,20 @@
+//note  , the js before return in executed just one time when you start the react project .
+//useState holds the value of the state when the compnent rerender .
+//changes the local variables doesnt trigger hte compnent to rerender .
+// The useState Hook provides those two things:
+  A state variable to retain the data between renders.
+  A state setter function to update the variable and trigger React to render the component again.
+// Use are react Hooks that are only aviliable when rendernig compnent .
+//GENERAL HOOKS RULES , always start with use and capiital letter after it .
+//you have to use them inside compennt body .
+//you have to call them on the toplevel of the component .
+//dont use them without the specail function of rerencer .
+//NOTE : AUTO BATHCING , example : if we have handleCLick function that contains setState for three useStates , when we click and trigger this function , will
+the compnent rernder once or three times ? the answer is with react 18 it will rernder just once .
+//in useState their is a function to hold the value , wich some times you will need
+setState( (prev) => {
+return prev+1
+} ).
+
+//with setTimeOut  always use the function of setState .
+//
