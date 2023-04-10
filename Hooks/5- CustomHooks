@@ -1,0 +1,64 @@
+// the main reason to use them , is that we can call react Hooks inside them,  you cant call react Hooks in normal Functions .
+// the sayntax of naming is , use then Capiital Letter .
+// when you say the name useC... you will know that this is not normal function and it contains react Hooks inside it .
+// in the same time we know that if we see a normal function name its immposiple to contain a react Hooks inside it .
+//every cutomHook calls independent  states .
+//customHook will be recalled with every  rerender for the compnent .
+//
+
+
+// Example 1 :
+
+const useToggle = (defaultValue) => {
+  const [show, setShow] = useState(defaultValue);
+
+  const toggle = () => {
+    setShow(!show);
+  };
+
+  return { show, toggle };
+};
+
+export default useToggle;
+
+the Use : 
+ const { show, toggle } = useToggle(true);
+  return (
+    <div>
+      <h4>toggle custom hook</h4>
+      <button className='btn' onClick={toggle}>
+      
+//Second Example useFetch :
+const useFetch = (url) => {
+  const [isLoading, setIsLoading] = useState(true);
+  const [isError, setIsError] = useState(false);
+  // change state value
+  const [data, setData] = useState(null);
+
+  useEffect(() => {
+    // change name
+    const fetchData = async () => {
+      try {
+        const resp = await fetch(url);
+
+        if (!resp.ok) {
+          setIsError(true);
+          setIsLoading(false);
+          return;
+        }
+        // change to response
+        const response = await resp.json();
+        setData(response);
+      } catch (error) {
+        setIsError(true);
+        // console.log(error);
+      }
+      // hide loading
+      setIsLoading(false);
+    };
+    // invoke fetch data
+    fetchData();
+  }, []);
+
+  return { isLoading, isError, data };
+};
