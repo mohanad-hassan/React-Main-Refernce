@@ -1,0 +1,31 @@
+// its like useState  , holds the value of state when rernder , but it doesnt trigger rernder when its value changes .
+//it works to refer the dom elements ,   like doc.getElmentById 
+//Dont Forget , State doesnt lose its value when rerendering the compnents .
+//mount is plugin the compnent to the html tree , unMount si removing it .
+//useRef returns Object that contains current  key  , to point to  any domElement , got to its attributes and set    ref= {name of your useRef}
+//to get the value ,   nameOfuseRef.current.value .
+//  
+const refContainer = useRef(null);
+
+    const name = refContainer.current.value;
+
+  <input
+            type='text'
+            id='name'
+            ref={refContainer}
+            className='form-input'
+          />
+          
+ //Second Example : we also can use it to handle values  , that will not change durring rerender .
+ //lets say that you have a code taht you want to execute only the on the initial rendering of the compnent , and you dont want to execute when rerender , the
+ solution is useRef ,  beacues useState will trigger infinty Loop .
+ 
+   const isMounted = useRef(false);
+
+ useEffect(() => {
+    if (!isMounted.current) {
+      isMounted.current = true;
+      return;
+    }
+    console.log('re-render');
+  }, [value]);
