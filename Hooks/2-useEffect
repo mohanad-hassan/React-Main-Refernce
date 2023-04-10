@@ -17,4 +17,6 @@ with state toggle , so we need Clean up function to remove things like eventlist
  //clean up runs after the render of the first component  , and before the useEffect of the second component  .
  // cleanUp executes when the comonent unMount .
  //WHERE IM  , reading about useEffect from react website .
+ //there is a version of useEffect that fires before the browser starts paibnting on the screen , called useLayoutEffect .
+ //
  
