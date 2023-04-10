@@ -1,0 +1,12 @@
+// in Labels insted of for we write htmlFor in  react becaues for is javascript code .
+// Controlled Inputs  , is to set a state to input fields to rernder the compnent with every change to the input field .
+//the Main reason for using Controlled Inputs is for immeditely vakidation .
+//note in form  ,  e.currentTarget returns the form in html syntax .
+// now Uncontrolled Inputs ,   to see values of the form we have two ways  ons with useRef hook , and second with javascript   new FormData(e.currentTarget)
+then to see the valuse we use 
+const formData = new FormData(e.currentTarget)
+const anyInput  = formData.get('name ')
+or clg [...formData.entries()]
+//  to have them in object : Object.fromEntries([...formData])
+ e.currentTarget.reset()  to delete what we wrote in the inputs .
+ //
