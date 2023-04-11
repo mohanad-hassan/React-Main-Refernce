@@ -4,7 +4,8 @@
 //Note :
 when any state of context rernder , all the compnents that used this context will be rernder , so be careful .
 see useContext in react docs .
-//
+// Note , so we create a context , this context returns object contains Provider , and Consumer , we Provider  to  wrap a compnent that will provide props 
+to child compnenets .
 
 export const LevelContext = createContext(iniitial value); what we change with return 
 **********************************************
