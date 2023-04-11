@@ -1,0 +1,4 @@
+// when a compnent rernder , all the child comonents of it will rerender , and for big projects this is very big problem .
+//if we go to reactdev tools Profiler , we can see why and when every compnent isd rerender .
+// so as a SOLUTION 1 : we can put the state in causing rernder to lowerState component , move it to seperate compnent   and put it in the parent component .
+//
