@@ -1,0 +1,10 @@
+//we use it with React.memo() to prevent rernder child comonents when we pass a function as a prop , because with every rernder the function is new value 
+because its like objects  , its adress in the memory changes .
+//useCallback is a React Hook that lets you cache a function definition between re-renders.
+
+const cachedFn = useCallback(fn, dependencies).
+
+//it only  change it if the dependicies changes .
+//If you’re writing a Custom Hook, it’s recommended to wrap any functions that it returns into useCallback:
+
+//
