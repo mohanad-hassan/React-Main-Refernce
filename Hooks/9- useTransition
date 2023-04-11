@@ -1,0 +1,13 @@
+// we use it rarely   , and in big projects .
+//it  updates the states without blocking the ui from the user , we use with heavy operations .
+//when we have a heavy function that it will take a time we grapp it inside useTransition , it provides also a boolean .
+//for toggle between Loading  and show the result when it ends .
+//Syntax  
+const [isPending, startTransition] = useTransition()
+.
+we set the function that we want to execute without blocking the ui in startTransition ( () => { }  )
+//isPending is a boolean value that is false , and when the function ends become True  . 
+we can use it in jsx  {isPending ?LoagingCompnent : otherCode}.
+
+//we use it with Router to make navigations more smoothly but  i didnt try that .
+//
