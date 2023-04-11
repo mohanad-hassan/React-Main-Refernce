@@ -1,0 +1,27 @@
+// we can think about it about a lite version of react-Redux .
+// import { useReducer } from 'react';
+
+function reducer(state, action) {
+  // ...
+}
+
+function MyComponent() {
+  const [state, dispatch] = useReducer(reducer, { age: 42 });
+  // ....
+  
+  
+ // parameters: useReducer(reducer, initialArg, init?) 
+optional init: The initializer function that should return the initial state. If it’s not specified, the initial state is set to initialArg. Otherwise, the initial state is set to the result of calling init(initialArg).  
+
+//The dispatch function only updates the state variable for the next render. If you read the state variable after calling the dispatch function, you will still get the old value that was on the screen before your call.
+
+//its like useState exactly , 
+//State is read-only. Don’t modify any objects or arrays in state.
+//we can useReducer with If conditon or with Switch case .
+
+//Although the result of createInitialState(username) is only used for the initial render, you’re still calling this function on every render. This can be wasteful if it’s creating large arrays or performing expensive calculations.
+
+To solve this, you may pass it as an initializer function to useReducer as the third argument instead:
+
+//Important : Calling the dispatch function does not change state in the running code but  updates it in the next render .
+//
