@@ -1,0 +1,31 @@
+// its about chnking code into smaller chunks .
+//its important for  performance .
+//it prevents some componets from  loading until the user interacts with them , wich give better and faster user experince  .
+//only imports the compnent when user starts worjing with it .
+//so react lazy doesnt shows the compennt untill the user gets into it  , it prevent it from import untill ther first render occurs .
+//
+
+we need Two things React.lazy and <Suspense> 
+
+//<Suspense> lets you display a fallback until its children have finished loading.
+
+<Suspense fallback={<Loading />}>
+  <SomeComponent />
+</Suspense> .
+
+//Suspense is just for showing fallback until the children is rendering .
+//
+
+Usually, you import components with the static import declaration:
+
+import MarkdownPreview from './MarkdownPreview.js';
+To defer loading this component’s code until it’s rendered for the first time, replace this import with:
+
+import { lazy } from 'react';
+
+const MarkdownPreview = lazy(() => import('./MarkdownPreview.js'));
+
+<Suspense fallback={<Loading />}>
+  <h2>Preview</h2>
+  <MarkdownPreview />
+ </Suspense>
