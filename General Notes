@@ -7,5 +7,6 @@
 // or npm init vite .
 //their is new library called REACT QYERY , for fethcing data inasted of set useEffect and is more faster and shorter code .
 // in react Devtools , Profiler shows wich compnents rerndering and why .
+// When you see clg Twice , its because of React.StrictMode wich works only in development mode .
 //
 
