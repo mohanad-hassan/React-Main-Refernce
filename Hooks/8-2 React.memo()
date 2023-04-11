@@ -1,0 +1,13 @@
+//lets say that we have a parent comonent contains one state and one child component , when the state in the parent component changes , the child copmnent will 
+rernder , but no need to rernder , so if we wrap a component with React.memo() it will take a memorize snapshot and use it when the parent rernder , and child 
+will stay without rernder , the only case that the child rernder is when a state changes inside the child component , or a prop we passed to it changes ,
+so be  careful when you pass a function or object because its memory location changes with every rernder, so we will need useMemo and useCallback.
+//most Used aproach is , when exporting a compnent we write Export Default React.memo(name of the compnent ) .
+//
+//Even when a component is memoized, it will still re-render when a context that it’s using changes. Memoization only has to do with props that are passed to the component from its parent.
+
+//To make your component re-render only when a part of some context changes, split your component in two. Read what you need from the context in the outer component, and pass it down to a memoized child as a prop.
+
+//When you need to pass a function to memoized component, either declare it outside your component so that it never changes, or useCallback to cache its definition between re-renders.
+
+//
