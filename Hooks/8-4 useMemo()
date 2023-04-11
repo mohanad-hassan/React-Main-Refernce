@@ -1,0 +1,4 @@
+// lets that you have a function  takes a lot of time to calcuate a some thing , and return a value , but we dont want to execute it with every rernder of the 
+compnent  , we store the value  and only if depenicies array changes , then it willl be reexecuted .
+//we use it to store objects and arrays , if we pass them as props to avoid rerndering when using React.memo() .
+//we can use it inasted of useCallback to store a function with return , but we dont need that at all .
