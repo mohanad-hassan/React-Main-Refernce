@@ -1,0 +1,21 @@
+// its not official of react , its external library .
+//redux toolkit contains all the libraries we need for Redux .
+//we use Redux Toolkit insted of Redux because 
+"Configuring a Redux store is too complicated"
+"I have to add a lot of packages to get Redux to do anything useful"
+"Redux requires too much boilerplate code" .
+ 
+ //npm install @reduxjs/toolkit react-redux  .
+ // #### @reduxjs/toolkit
+
+consists of few libraries
+
+- redux (core library, state management)
+- immer (allows to mutate state)
+- redux-thunk (handles async actions)
+- reselect (simplifies reducer functions)
+.
+
+//we need react-redux for connecting react to redux , Note : redux can work with every front end frameworks .
+//also download Redux Dev Tools for the browser .
+//
