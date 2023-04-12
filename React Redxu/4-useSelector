@@ -1,0 +1,4 @@
+//is a Hook from react redux to get to the entire store and states .
+//const store  = useSelector((store) => store)  returns object for the whole store .
+store.cart ,   the name we give it to the reducer .
+//
