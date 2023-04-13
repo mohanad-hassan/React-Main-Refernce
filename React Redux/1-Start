@@ -22,4 +22,9 @@ consists of few libraries
 
 //every CreateSlice reurns a lot of things , actions is the things we will use with dispatch for functions , and reducers for imlement the slice to 
 the main redux store .
+
+//React Redux includes a <Provider /> component, which makes the Redux store available to the rest of your app:
+//useSelector reads a value from the store state and subscribes to updates, 
+while useDispatch returns the store's dispatch method to let you dispatch actions.
+
 //
