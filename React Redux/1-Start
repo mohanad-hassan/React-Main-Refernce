@@ -18,4 +18,8 @@ consists of few libraries
 
 //we need react-redux for connecting react to redux , Note : redux can work with every front end frameworks .
 //also download Redux Dev Tools for the browser .
+
+
+//every CreateSlice reurns a lot of things , actions is the things we will use with dispatch for functions , and reducers for imlement the slice to 
+the main redux store .
 //
