@@ -1,0 +1,24 @@
+    this aproach  will keep all values in the state , and just adds or modify cartItems .
+
+//const cartSlice = createSlice({
+  name: 'cart',
+  initialState,
+  reducers: {
+    clearCart: (state) => {
+      state.cartItems = [];
+    },
+    
+    
+    
+    //    this aproach  will delte  all values in the state , and just adds  cartItems .
+
+    //const cartSlice = createSlice({
+  name: 'cart',
+  initialState,
+  reducers: {
+    clearCart: (state) => {
+     return  state.cartItems = [];
+    },
+    
+    
+    
