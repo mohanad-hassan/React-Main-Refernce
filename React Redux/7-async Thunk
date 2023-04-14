@@ -60,3 +60,8 @@ function App() {
 }
 
 export default App;
+
+//you can add aprameters to the async thunk function .
+//there is the second parameter that returns , the whole state of the store redux inside parameter.getState() . IMPORTANT .
+//also returns parameter.dispatch ()  for dispatching IMPORTANT .
+//
