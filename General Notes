@@ -1,3 +1,4 @@
+//IMORTANT react is only client side rendernig only , and doesnt support server side rendering .
 //we use e.preventDefault() because the default behavior for form is to collect the data and send them to the url you defined in action .
 //onSubmit fires action when the user clics the button its type is submit .
 //    npm create vite@latest my-react-app -- --template react   is faster than create react-app  for creating , developmening and production .
