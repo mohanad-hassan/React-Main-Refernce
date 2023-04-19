@@ -1,2 +1,4 @@
 //dont forget to clean all slices manually when you logout from your application .
-//
+//remrmber when you dispatch and chnage a state , all the compnents that uses that state with useSelector will rernder .
+//the only way in redux to change state is with useDispatch () .
+
